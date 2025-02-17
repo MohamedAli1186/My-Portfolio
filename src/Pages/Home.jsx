@@ -3,6 +3,7 @@ import Certifications from "../Components/Certifications";
 import FunFacts from "../Components/FunFacts";
 import FeaturedProjects from "../Components/FeaturedProjects";
 import AboutMe from "../Components/AboutMe";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,8 +21,8 @@ const Home = () => {
           <span className="text-[#f97316] font-bold">WaffarX</span>
           <span className="block mt-1">React & Next.js Enthusiast</span>
         </h2>
-        <a
-          href="src\assets\Mohamed-Ali-Resume.pdf"
+        <Link
+          to="/Mohamed-Ali-Resume.pdf"
           download="Mohamed_Ali_CV.pdf"
           className="mt-6 bg-[#f97316] hover:bg-[#ea580c] cursor-pointer
           px-6 py-3 rounded-md font-medium transition"
@@ -29,7 +30,7 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           Download CV
-        </a>
+        </Link>
       </section>
       <TechStack />
       <Certifications />
