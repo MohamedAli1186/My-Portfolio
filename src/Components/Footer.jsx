@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl flex flex-wrap justify-evenly gap-8">
         {/* About Section */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4">Mohamed Ali</h3>
+          <h3 className="text-2xl font-semibold mb-4 ">Mohamed Ali</h3>
           <p className="text-gray-400 text-sm max-w-90">
             Front-End Developer specializing in React, Next.js, and modern web
             technologies. Passionate about building scalable, high-performance
