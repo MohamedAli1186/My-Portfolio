@@ -37,7 +37,7 @@ const Header = () => {
     <header className="bg-[#252424] text-white py-4 fixed w-full top-0 z-20 shadow-md">
       <nav className="p-container flex justify-between items-center">
         <Link to="/">
-          <img src="/logo.png" alt="logo" className="w-10 h-auto" />
+          <img src="/logo.png" alt="logo" className="w-15 h-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -47,7 +47,7 @@ const Header = () => {
               <NavLink
                 to={path}
                 className={({ isActive }) =>
-                  `transition ${
+                  `transition text-lg ${
                     isActive ? "text-[#f97316]" : "hover:text-[#f97316]"
                   }`
                 }
