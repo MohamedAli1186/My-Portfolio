@@ -24,7 +24,7 @@ const Home = () => {
         <Link
           to="/Mohamed-Ali-Resume.pdf"
           download="Mohamed_Ali_CV.pdf"
-          className="mt-6 bg-[#f97316] hover:bg-[#ea580c] cursor-pointer
+          className="mt-6 bg-[#f97316] hover:bg-[#ea580c]  cursor-pointer
           px-6 py-3 rounded-md font-medium transition"
           target="_blank"
           rel="noopener noreferrer"
