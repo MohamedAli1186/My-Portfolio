@@ -16,7 +16,9 @@ const Home = () => {
           Hi, I&apos;m Mohamed Ali
         </h1>
         <h2 className="text-xl md:text-4xl mt-4 font-light mb-10">
-          Front-End Developer, React & Next.js Enthusiast
+          Front-End Developer at{" "}
+          <span className="text-[#f97316] font-bold">WaffarX</span>
+          <span className="block mt-1">React & Next.js Enthusiast</span>
         </h2>
         <a
           href="src\assets\Mohamed-Ali-Resume.pdf"
