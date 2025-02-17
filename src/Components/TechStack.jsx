@@ -1,3 +1,4 @@
+import { DiVisualstudio } from "react-icons/di";
 import { FaReact, FaJsSquare, FaHtml5, FaCss3 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -22,6 +23,7 @@ const TechStack = () => {
         <SiFigma size={50} className="text-[#24A4E2]" />
         <FaHtml5 size={50} className="text-[#E44D26]" />
         <SiTailwindcss size={50} className="text-[#38B2AC]" />
+        <DiVisualstudio size={50} className="text-[#31AEF3]" />
       </div>
     </section>
   );

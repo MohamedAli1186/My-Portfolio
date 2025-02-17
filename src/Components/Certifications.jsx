@@ -15,8 +15,8 @@ const Certifications = () => {
             className="bg-[#222] p-6 rounded-lg py-10 w-full h-full cursor-pointer hover:bg-[#333] transition"
             onClick={() => setSelectedImage(cert.image)}
           >
-            <h3 className="text-2xl font-semibold">{cert.title}</h3>
-            <p className="text-gray-400 text-xl">{cert.description}</p>
+            <h3 className="text-xl sm:text-2xl font-semibold">{cert.title}</h3>
+            <p className="text-gray-400 text-lg sm:text-xl">{cert.description}</p>
           </div>
         ))}
       </div>

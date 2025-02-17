@@ -3,12 +3,14 @@ import {
   FaAngular,
   FaExternalLinkAlt,
   FaGithub,
+  FaCss3,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiMongodb,
   SiTailwindcss,
   SiTypescript,
+  SiJavascript,
 } from "react-icons/si";
 
 const projects = [
@@ -16,9 +18,12 @@ const projects = [
     title: "Food Restaurant App",
     description:
       "A full-stack web app using Angular, MongoDB, Express.js, and Node.js.",
-    tech: [<FaAngular key="angular" />, <SiMongodb key="mongodb" />],
-    github: "https://github.com/yourusername/food-restaurant",
-    demo: "https://yourdemo.com",
+    tech: [
+      <FaAngular key="angular" />,
+      <SiMongodb key="mongodb" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/Food-Restaurant",
   },
   {
     title: "Mental Health Detection",
@@ -27,26 +32,42 @@ const projects = [
     tech: [
       <FaReact key="react" />,
       <SiNextdotjs key="next.js" />,
-      <SiTailwindcss key="tailwindcss" />,
+      <FaCss3 key="css" />,
     ],
-    github: "https://github.com/yourusername/mental-health-detection",
-    demo: "https://yourdemo.com",
+    github:
+      "https://github.com/MohamedAli1186/Mental-Health-Detection-from-Social-Media-Text",
   },
   {
     title: "E-Learning Management System",
     description:
       "An LMS website that allows students to access courses and submit assignments.",
-    tech: [<FaReact key="react" />, <SiTypescript key="typescript" />],
-    github: "https://github.com/yourusername/e-learning",
-    demo: "https://yourdemo.com",
+    tech: [
+      <FaAngular key="angular" />,
+      <SiJavascript key="javascript" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/E-LMS",
   },
   {
-    title: "E-Commerce Mobile App",
+    title: "E-Commerce",
     description:
-      "An Android shopping app with user authentication and cart management.",
-    tech: [<FaReact key="react" />, <SiTailwindcss key="tailwindcss" />],
-    github: "https://github.com/yourusername/e-commerce-app",
-    demo: "https://yourdemo.com",
+      "A website shopping app with user authentication and cart management.",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiJavascript key="javascript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/ecommerce-app",
+  },
+  {
+    title: "Car Showcase Website",
+    description: "A website that displays a list of cars with their details.",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiTypescript key="typescript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/car_showcase",
   },
 ];
 
@@ -75,13 +96,15 @@ const Projects = () => {
               >
                 <FaGithub /> Code
               </a>
-              <a
-                href={project.demo}
-                target="_blank"
-                className="text-white hover:text-[#f97316] flex items-center gap-1"
-              >
-                <FaExternalLinkAlt /> Live Demo
-              </a>
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  className="text-white hover:text-[#f97316] flex items-center gap-1"
+                >
+                  <FaExternalLinkAlt /> Live Demo
+                </a>
+              )}
             </div>
           </div>
         ))}

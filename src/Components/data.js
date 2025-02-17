@@ -7,18 +7,18 @@ export const certificates = [
   {
     title: "Top Performer - ASU Employment Fair'23",
     description:
-      "Recognized for outstanding contributions at ASU Career Center.",
+      "Recognized for outstanding contributions at ASU Career Center as an Usher in the main events.",
     image: "/EF-top-performer.webp",
   },
   {
     title: "Public Relations Member - AIBE ASU",
     description:
-      "Engaged in on-campus personal selling to urge students to join the team. Worked in teams and giving presentations.",
+      "Engaged in on-campus personal selling to urge students to join the team. Worked in teams and gave presentations.",
     image: "/AIBE.webp",
   },
   {
     title: "Up Skill - ASU Career Center",
-    description: "Dealed with team working and giving presentations.",
+    description: "trained to work with team working, give presentations and personal sell",
     image: "/upSkill.webp",
   },
 ];
@@ -30,6 +30,7 @@ export const Skills = [
   "Tailwind CSS",
   "JavaScript (ES6+)",
   "Angular",
+  "EmailJS",
   "Figma",
   "REST APIs",
   "Git & GitHub",
@@ -61,7 +62,7 @@ export const educationData = [
     icon: "udemy",
     title: "Cypress End-to-End Testing",
     subtitle: "Maximilian Schwarzmüller",
-    duration: "84Hrs",
+    duration: "12Hrs",
     description: "Udemy, 2024",
   },
 ];
