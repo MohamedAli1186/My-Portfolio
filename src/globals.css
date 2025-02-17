@@ -12,14 +12,14 @@
 }
 @layer utilities {
   .typing-title {
-    @apply overflow-hidden whitespace-nowrap text-2xl md:text-4xl 
+    @apply overflow-hidden whitespace-nowrap text-3xl md:text-4xl 
     font-bold animate-[typing_3s_steps(30,end)_forwards] mx-auto text-center
       after:content-['|'] after:animate-[blink_1s_infinite_1s];
   }
 }
 @layer utilities {
   .title {
-    @apply text-2xl md:text-4xl font-bold text-center;
+    @apply text-3xl md:text-4xl font-bold text-center;
   }
 }
 :root {

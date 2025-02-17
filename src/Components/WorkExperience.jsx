@@ -7,7 +7,7 @@ const WorkExperience = () => {
       <h2 className="typing-title">Work Experience</h2>
       <div className="mt-8">
         <div className="bg-[#222] p-10 rounded-lg max-w-200 mx-auto">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
             <FaBriefcase className="text-[#f97316] text-2xl" />
             <div>
               <h3 className="text-xl font-semibold">
@@ -34,7 +34,7 @@ const WorkExperience = () => {
           </ul>
         </div>
         <div className="bg-[#222] p-10 rounded-lg max-w-200 my-10 mx-auto">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
             <MdModelTraining size={30} className="text-[#f97316] text-2xl" />
             <div>
               <h3 className="text-xl font-semibold">

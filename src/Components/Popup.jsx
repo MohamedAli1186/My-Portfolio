@@ -16,15 +16,9 @@ const Popup = ({ image, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-white p-4 rounded-lg shadow-lg max-w-2xl w-full"
+        className="relative bg-white p-2 rounded-lg shadow-lg max-w-[80%]  md:max-w-[50%] w-full"
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-gray-600 text-xl hover:text-gray-900"
-        >
-          ✖
-        </button>
         <img src={image} alt="Certificate" className="w-full rounded-lg" />
       </div>
     </div>

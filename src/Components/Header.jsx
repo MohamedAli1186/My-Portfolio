@@ -1,14 +1,30 @@
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-    document.body.style.overflow = menuOpen ? "hidden" : "auto"; // Prevent background scrolling
+    setMenuOpen((prev) => !prev);
   };
+
+  // Close sidebar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuOpen &&
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [menuOpen]);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -52,8 +68,12 @@ const Header = () => {
         </button>
 
         {/* Mobile Sidebar Menu */}
+        {menuOpen && (
+          <div className="fixed inset-0 bg-popupBG bg-opacity-50 z-30" />
+        )}
         <div
-          className={`fixed top-0 right-0 w-64 h-full bg-[#1a1a1a] shadow-lg transform ${
+          ref={sidebarRef}
+          className={`fixed top-0 right-0 w-64 h-full bg-[#1a1a1a] shadow-lg z-40 transform ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out md:hidden`}
         >
@@ -77,7 +97,7 @@ const Header = () => {
                     }`
                   }
                   onClick={() => {
-                    toggleMenu();
+                    setMenuOpen(false);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
