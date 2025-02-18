@@ -1,28 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
-  .p-container {
-    @apply px-10   lg:px-[7%];
-  }
+@utility p-container {
+  @apply px-10   lg:px-[7%];
 }
-@layer utilities {
-  .hover-effect {
-    @apply duration-700 hover:scale-[1.05];
-  }
+@utility hover-effect {
+  @apply duration-700 hover:scale-[1.05];
 }
-@layer utilities {
-  .typing-title {
-    @apply overflow-hidden whitespace-nowrap text-3xl md:text-4xl 
+@utility typing-title {
+  @apply overflow-hidden whitespace-nowrap text-3xl md:text-4xl 
     font-bold animate-[typing_3s_steps(30,end)_forwards] mx-auto text-center
       after:content-['|'] after:animate-[blink_1s_infinite_1s];
-  }
 }
-@layer utilities {
-  .title {
-    @apply text-3xl md:text-4xl font-bold text-center;
-  }
+@utility title {
+  @apply text-3xl md:text-4xl font-bold text-center;
+}
+@utility title {
+  @apply text-3xl md:text-4xl font-bold text-center;
 }
 :root {
   font-family: "Roboto Mono", serif;
