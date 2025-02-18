@@ -36,10 +36,12 @@ const Header = () => {
   return (
     <header className="bg-[#252424] text-white py-4 fixed w-full top-0 z-20 shadow-md">
       <nav className="p-container flex justify-between items-center">
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <img src="/logo.png" alt="logo" className="w-15 h-auto" />
         </Link>
-
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6">
           {navItems.map(({ name, path }) => (
@@ -58,7 +60,6 @@ const Header = () => {
             </li>
           ))}
         </ul>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white text-2xl focus:outline-none"
@@ -66,7 +67,6 @@ const Header = () => {
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
-
         {/* Mobile Sidebar Menu */}
         {menuOpen && (
           <div className="fixed inset-0 bg-popupBG bg-opacity-50 z-30" />
