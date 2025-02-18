@@ -11,7 +11,7 @@ const SocialLinks = () => {
         <FaLinkedin />
       </a>
       <a
-        href="https://github.com/MohamedAli-WaffarX"
+        href="https://github.com/MohamedAli1186"
         target="_blank"
         className="hover:text-black transition"
       >

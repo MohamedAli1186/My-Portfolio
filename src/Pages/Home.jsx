@@ -42,7 +42,7 @@ const Home = () => {
             Download CV
           </Link>
           <Link
-            to="https://github.com/MohamedAli-WaffarX"
+            to="https://github.com/MohamedAli1186"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black hover:bg-white text-xl  hover:text-black flex 
