@@ -5,29 +5,6 @@ export const certificates = [
     image: "/MEAN.webp",
   },
   {
-    title: "Predictive Modeling in Data Science",
-    description: "Kayfa Platform",
-    image: "/kayfa.webp",
-  },
-  {
-    title: "Integrated Embedded Hardware & Software Diploma",
-    description: "Orange Digital Center & AMIT | 2022",
-    image: "/embedded.webp",
-  },
-  {
-    title: "Information Technology Intern",
-    description: "Hassan Mohammed Allam",
-    image: "/HassanAllam.webp",
-  },
-];
-export const Achievements = [
-  {
-    title: "Attending RoboTech'22 Workshop",
-    description:
-      "Attended workshop about logic programming and its applications",
-    image: "/Ropo.webp",
-  },
-  {
     title: "Top Performer - ASU Employment Fair'23",
     description:
       "Recognized for outstanding contributions at ASU Career Center as an Usher in the main events.",
@@ -41,8 +18,7 @@ export const Achievements = [
   },
   {
     title: "Up Skill - ASU Career Center",
-    description:
-      "trained to work with team working, give presentations and personal sell",
+    description: "trained to work with team working, give presentations and personal sell",
     image: "/upSkill.webp",
   },
 ];

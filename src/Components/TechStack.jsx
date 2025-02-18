@@ -1,6 +1,5 @@
 import { DiVisualstudio } from "react-icons/di";
 import { FaReact, FaJsSquare, FaHtml5, FaCss3 } from "react-icons/fa";
-import { IoLogoVercel } from "react-icons/io5";
 import {
   SiNextdotjs,
   SiMongodb,
@@ -24,7 +23,6 @@ const TechStack = () => {
         <SiFigma size={50} className="text-[#24A4E2]" />
         <FaHtml5 size={50} className="text-[#E44D26]" />
         <SiTailwindcss size={50} className="text-[#38B2AC]" />
-        <IoLogoVercel size={50} className="text-[#000]" />
         <DiVisualstudio size={50} className="text-[#31AEF3]" />
       </div>
     </section>
