@@ -6,7 +6,7 @@ export const certificates = [
   },
   {
     title: "Predictive Modeling in Data Science",
-    description: "Kayfa Platform",
+    description: "Kayfa Platform | 2023",
     image: "/kayfa.webp",
   },
   {
@@ -16,17 +16,11 @@ export const certificates = [
   },
   {
     title: "Information Technology Intern",
-    description: "Hassan Mohammed Allam",
+    description: "Hassan Mohammed Allam | 2023",
     image: "/HassanAllam.webp",
   },
 ];
 export const Achievements = [
-  {
-    title: "Attending RoboTech'22 Workshop",
-    description:
-      "Attended workshop about logic programming and its applications",
-    image: "/Ropo.webp",
-  },
   {
     title: "Top Performer - ASU Employment Fair'23",
     description:
@@ -44,6 +38,12 @@ export const Achievements = [
     description:
       "trained to work with team working, give presentations and personal sell",
     image: "/upSkill.webp",
+  },
+  {
+    title: "Attending RoboTech'22 Workshop",
+    description:
+      "Attended workshop about logic programming and its applications",
+    image: "/Ropo.webp",
   },
 ];
 
@@ -65,7 +65,7 @@ export const Skills = [
 export const educationData = [
   {
     icon: "graduation",
-    title: "Computer Science & Information Systems",
+    title: "Computer Science major of Information Systems",
     duration: "4Years",
     description: "Ain Shams University, 2024",
   },

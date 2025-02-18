@@ -14,7 +14,7 @@ const Contact = () => {
       toast.error("Please enter your name");
       return false;
     }
-    
+
     if (!email.trim()) {
       toast.error("Please enter your email");
       return false;
@@ -36,7 +36,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }

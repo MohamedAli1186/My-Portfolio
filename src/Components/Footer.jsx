@@ -1,8 +1,12 @@
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import SocialLinks from "./SocialLinks";
 import { Link } from "react-router-dom";
+import useCopyToClipboard from "../hooks/useCopyToClipboard";
 
 const Footer = () => {
+  const { handleClick } = useCopyToClipboard();
+  const myPhone = "+201011533423";
+
   return (
     <footer className="bg-[#121212] py-12 px-6 md:px-16">
       <div className="max-w-6xl flex flex-wrap justify-evenly gap-8">
@@ -28,9 +32,15 @@ const Footer = () => {
               mohameedaallii10@gmail.com
             </Link>
           </p>
+          <p
+            onClick={handleClick(myPhone)}
+            className="flex items-center gap-3 text-gray-300 hover:text-[#f97316] transition cursor-pointer"
+          >
+            <FaPhoneAlt size={18} className="text-[#f97316]" />
+            {myPhone}
+            <p className="text-xs text-[#f97316]">Click to copy</p>
+          </p>
         </div>
-
-        {/* Quick Links & Socials */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
           <SocialLinks />

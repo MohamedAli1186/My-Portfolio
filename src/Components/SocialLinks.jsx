@@ -20,7 +20,7 @@ const SocialLinks = () => {
       <a
         href="https://www.facebook.com/profile.php?id=100012839829736"
         target="_blank"
-        className="hover:text-[#0825ff] transition"
+        className="hover:text-[#1408ff] transition"
       >
         <FaFacebook />
       </a>

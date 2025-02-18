@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <section className="my-20 text-center">
+    <section className="mb-20 my-10 text-center">
       <img
         src="/my-photooo.webp"
         alt="my photo"

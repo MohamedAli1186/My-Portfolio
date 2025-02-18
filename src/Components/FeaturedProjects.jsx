@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedProjects = () => {
   return (
-    <section className="my-20">
+    <section className="my-30">
       <h2 className="title">Featured Projects</h2>
       <div className="grid md:grid-cols-2 gap-8 mt-10 mb-10">
         <div className="bg-[#222] p-6 rounded-lg hover-effect transition">

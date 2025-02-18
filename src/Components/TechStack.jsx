@@ -11,7 +11,7 @@ import {
 } from "react-icons/si";
 const TechStack = () => {
   return (
-    <section className="mb-30 py-15 text-center">
+    <section className="mt-10 text-center">
       <h2 className="title">Tech Stack</h2>
       <div className="flex justify-center flex-wrap gap-6 mt-6 text-4xl">
         <FaReact size={50} className="text-[#61DBFB]" />
