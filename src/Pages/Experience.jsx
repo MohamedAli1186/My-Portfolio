@@ -1,5 +1,4 @@
 import { FaGraduationCap, FaCheckCircle } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import WorkExperience from "../Components/WorkExperience";
 import { SiUdemy } from "react-icons/si";
 import { Skills, educationData } from "../Components/data";
@@ -49,7 +48,9 @@ const Experience = () => {
                     {item.title}
                     {item.subtitle && <p>{item.subtitle}</p>}
                   </h3>
-                  <span className="text-[#f97316] text-lg">{item.duration}</span>
+                  <span className="text-[#f97316] text-lg">
+                    {item.duration}
+                  </span>
                   <p className="text-gray-400 text-sm">{item.description}</p>
                 </div>
               </div>
@@ -57,16 +58,6 @@ const Experience = () => {
           ))}
         </section>
       </article>
-
-      <div className="text-center my-10">
-        <Link
-          to="/"
-          className="bg-[#f97316] hover:bg-[#ea580c] px-6 py-3 rounded-md font-medium transition"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          Back to Home
-        </Link>
-      </div>
     </main>
   );
 };

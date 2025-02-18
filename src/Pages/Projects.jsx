@@ -50,6 +50,7 @@ const projects = [
   },
   {
     title: "E-Commerce",
+    demo: "",
     description:
       "A website shopping app with user authentication and cart management.",
     tech: [
