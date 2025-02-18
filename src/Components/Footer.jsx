@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#121212] py-12 px-6 md:px-16">
-      <div className="max-w-6xl flex flex-wrap justify-evenly gap-8">
+      <div className="max-w-6xl flex flex-wrap justify-start sm:justify-evenly gap-8">
         {/* About Section */}
         <div>
           <h3 className="text-2xl font-semibold mb-4 ">Mohamed Ali</h3>
