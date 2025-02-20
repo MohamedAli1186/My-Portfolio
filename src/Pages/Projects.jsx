@@ -15,6 +15,18 @@ import {
 
 const projects = [
   {
+    title: "E-Learning Management System",
+    description:
+      "An LMS website that allows students to access courses and submit assignments.",
+    demo: "https://ecommerce-app-sigma-two.vercel.app/",
+    tech: [
+      <FaAngular key="angular" />,
+      <SiJavascript key="javascript" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/E-LMS",
+  },
+  {
     title: "Food Restaurant App",
     description:
       "A full-stack web app using Angular, MongoDB, Express.js, and Node.js.",
@@ -37,17 +49,7 @@ const projects = [
     github:
       "https://github.com/MohamedAli1186/Mental-Health-Detection-from-Social-Media-Text",
   },
-  {
-    title: "E-Learning Management System",
-    description:
-      "An LMS website that allows students to access courses and submit assignments.",
-    tech: [
-      <FaAngular key="angular" />,
-      <SiJavascript key="javascript" />,
-      <FaCss3 key="css" />,
-    ],
-    github: "https://github.com/MohamedAli1186/E-LMS",
-  },
+
   {
     title: "E-Commerce",
     demo: "",
