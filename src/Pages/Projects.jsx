@@ -4,6 +4,7 @@ import {
   FaExternalLinkAlt,
   FaGithub,
   FaCss3,
+  FaHtml5,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -15,12 +16,36 @@ import {
 
 const projects = [
   {
+    title: "E-Commerce",
+    demo: "https://ecommerce-app-sigma-two.vercel.app/",
+    description:
+      "A website shopping app with user authentication and cart management.",
+
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiJavascript key="javascript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/ecommerce-app",
+  },
+  {
     title: "E-Learning Management System",
     description:
       "An LMS website that allows students to access courses and submit assignments.",
-    demo: "https://ecommerce-app-sigma-two.vercel.app/",
     tech: [
       <FaAngular key="angular" />,
+      <SiJavascript key="javascript" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/E-LMS",
+  },
+  {
+    title: "Small Responsive Website",
+    description:
+      "A small responsive website built with HTML, CSS, and JavaScript.",
+    demo: "https://responsive-website-peach-rho.vercel.app/",
+    tech: [
+      <FaHtml5 key="html" />,
       <SiJavascript key="javascript" />,
       <FaCss3 key="css" />,
     ],
@@ -50,18 +75,6 @@ const projects = [
       "https://github.com/MohamedAli1186/Mental-Health-Detection-from-Social-Media-Text",
   },
 
-  {
-    title: "E-Commerce",
-    demo: "",
-    description:
-      "A website shopping app with user authentication and cart management.",
-    tech: [
-      <FaReact key="react" />,
-      <SiTailwindcss key="tailwindcss" />,
-      <SiJavascript key="javascript" />,
-    ],
-    github: "https://github.com/MohamedAli1186/ecommerce-app",
-  },
   {
     title: "Car Showcase Website",
     description: "A website that displays a list of cars with their details.",
