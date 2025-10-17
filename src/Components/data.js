@@ -1,49 +1,91 @@
 export const certificates = [
   {
+    id: 1,
     title: "MEAN Stack Development Scholarship",
-    description: "Orange Digital Center & AMIT | 2024",
+    issuer: "Orange Digital Center & AMIT",
+    date: "2024",
     image: "/MEAN.webp",
+    description:
+      "Completed an intensive MEAN stack scholarship covering Angular, Node.js, Express, and MongoDB with real-world projects and assessments.",
+    type: "certification",
+    skills: ["Angular", "Node.js", "Express", "MongoDB", "REST APIs"],
   },
   {
+    id: 2,
     title: "Predictive Modeling in Data Science",
-    description: "Kayfa Platform | 2023",
+    issuer: "Kayfa Platform",
+    date: "2023",
     image: "/kayfa.webp",
+    description:
+      "Built and evaluated predictive models, learned feature engineering, model selection, and performance metrics.",
+    type: "certification",
+    skills: ["Data Science", "Modeling", "Python", "Evaluation"],
   },
   {
+    id: 3,
     title: "Integrated Embedded Hardware & Software Diploma",
-    description: "Orange Digital Center & AMIT | 2022",
+    issuer: "Orange Digital Center & AMIT",
+    date: "2022",
     image: "/embedded.webp",
+    description:
+      "Covered embedded systems fundamentals, firmware, and hardware-software integration through labs and practical projects.",
+    type: "certification",
+    skills: ["Embedded", "C/C++", "MCUs", "Hardware Integration"],
   },
   {
+    id: 4,
     title: "Information Technology Intern",
-    description: "Hassan Mohammed Allam | 2023",
+    issuer: "Hassan Mohammed Allam",
+    date: "2023",
     image: "/HassanAllam.webp",
+    description:
+      "IT internship focusing on systems, documentation, and cross-team collaboration within a corporate environment.",
+    type: "internship",
+    skills: ["IT Operations", "Documentation", "Collaboration"],
   },
-];
-export const Achievements = [
   {
+    id: 5,
     title: "Top Performer - ASU Employment Fair'23",
-    description:
-      "Recognized for outstanding contributions at ASU Career Center as an Usher in the main events.",
+    issuer: "ASU Career Center",
+    date: "2023",
     image: "/EF-top-performer.webp",
+    description:
+      "Recognized as a Top Performer for outstanding contributions and professional communication during ASU Employment Fair.",
+    type: "award",
+    skills: ["Communication", "Public Relations", "Presentation"],
   },
   {
+    id: 6,
     title: "Public Relations Member - AIBE ASU",
-    description:
-      "Engaged in on-campus personal selling to urge students to join the team. Worked in teams and gave presentations.",
+    issuer: "AIBE ASU",
+    date: "2023",
     image: "/AIBE.webp",
+    description:
+      "Led on-campus personal selling efforts, conducted presentations, and collaborated within PR teams.",
+    type: "award",
+    skills: ["PR", "Personal Selling", "Teamwork"],
   },
   {
+    id: 7,
     title: "Up Skill - ASU Career Center",
-    description:
-      "trained to work with team working, give presentations and personal sell",
+    issuer: "ASU Career Center",
+    date: "2023",
     image: "/upSkill.webp",
+    description:
+      "Training program focused on teamwork, public speaking, and personal selling fundamentals.",
+    type: "certification",
+    skills: ["Teamwork", "Presentation", "Personal Selling"],
   },
   {
-    title: "Attending RoboTech'22 Workshop",
-    description:
-      "Attended workshop about logic programming and its applications",
+    id: 8,
+    title: "RoboTech'22 Workshop Attendee",
+    issuer: "RoboTech",
+    date: "2022",
     image: "/Ropo.webp",
+    description:
+      "Attended hands-on workshop on logic programming concepts and their real-world applications.",
+    type: "workshop",
+    skills: ["Logic Programming", "Problem Solving"],
   },
 ];
 
@@ -56,6 +98,7 @@ export const Skills = [
   "Angular",
   "EmailJS",
   "Figma",
+  "SDLC",
   "REST APIs",
   "Git & GitHub",
   "Cypress",

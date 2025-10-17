@@ -13,8 +13,49 @@ import {
   SiTypescript,
   SiJavascript,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
 const projects = [
+  {
+    title: "My Content Creator Portfolio",
+    demo: "https://jimmy-creator-portfolio.vercel.app/",
+    description:
+      "My Content Creator Portfolio is a modern, responsive website built with React and Tailwind CSS. It features a clean, minimalist design with smooth animations showcasing my content creation journey.",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiTypescript key="typescript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/cinematic-creator-showcase",
+    tag: "New",
+  },
+  {
+    title: "Cine Wave",
+    demo: "https://cinewavee.vercel.app/",
+    description:
+      "CineWave is a sleek, responsive movie browser built with React and Tailwind CSS, powered by the TMDB API. It allows users to explore popular movies, view detailed information, and discover new content in a clean, modern UI",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiTypescript key="typescript" />,
+      <TbApi key="api" />,
+    ],
+    github: "https://github.com/MohamedAli1186/CineWave",
+    tag: "New",
+  },
+  {
+    title: "Ahmed Salah's portfolio",
+    demo: "https://ahmed-salah.vercel.app/",
+    description:
+      "Ahmed Salah's portfolio is a modern, responsive website built with React and Tailwind CSS. It features a clean, minimalist design with smooth animations and Dark mode and a smooth user experience.",
+
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiJavascript key="javascript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/Salah-s-Portfolio",
+  },
   {
     title: "E-Commerce",
     demo: "https://ecommerce-app-sigma-two.vercel.app/",
@@ -74,22 +115,11 @@ const projects = [
     github:
       "https://github.com/MohamedAli1186/Mental-Health-Detection-from-Social-Media-Text",
   },
-
-  {
-    title: "Car Showcase Website",
-    description: "A website that displays a list of cars with their details.",
-    tech: [
-      <FaReact key="react" />,
-      <SiTailwindcss key="tailwindcss" />,
-      <SiTypescript key="typescript" />,
-    ],
-    github: "https://github.com/MohamedAli1186/car_showcase",
-  },
 ];
 
 const Projects = () => {
   return (
-    <main className="p-container my-20">
+    <main className="p-container my-10">
       <section className="text-center py-16">
         <h1 className="typing-title">My Projects</h1>
         <p className="text-gray-300 mt-4">
@@ -100,7 +130,12 @@ const Projects = () => {
 
       <section className="grid md:grid-cols-2 gap-8 mt-10">
         {projects.map((project, index) => (
-          <div key={index} className="bg-[#222] p-6 rounded-lg">
+          <div key={index} className="bg-[#222] p-6 rounded-lg relative">
+            {project.tag && (
+              <span className="bg-[#f97316] text-white px-2 py-1 absolute top-2 right-2 rounded-full text-sm">
+                {project.tag}
+              </span>
+            )}
             <h3 className="text-2xl font-semibold">{project.title}</h3>
             <p className="text-gray-400 mt-2">{project.description}</p>
             <div className="flex gap-4 mt-3 text-2xl">{project.tech}</div>

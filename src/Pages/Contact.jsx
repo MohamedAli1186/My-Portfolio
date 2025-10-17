@@ -89,7 +89,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="p-container my-20">
+    <main className="p-container my-10">
       <Toaster position="bottom-right" />
       <section className="text-center py-16">
         <h1 className="typing-title">Get In Touch!</h1>

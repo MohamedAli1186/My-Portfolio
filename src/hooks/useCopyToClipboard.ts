@@ -5,7 +5,7 @@ const useCopyToClipboard = () => {
     navigator.clipboard.writeText(text).then(() => {
       // Create tooltip element
       const tooltip = document.createElement("div");
-      tooltip.textContent = "Copied!";
+      tooltip.textContent = "Number Copied!";
       tooltip.style.position = "absolute";
       tooltip.style.top = `${element.offsetTop - 30}px`;
       tooltip.style.left = `${element.offsetLeft + 50}px`;

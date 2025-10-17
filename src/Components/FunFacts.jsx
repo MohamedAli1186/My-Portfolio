@@ -1,15 +1,18 @@
 const FunFacts = () => {
   return (
-    <article className="my-30 text-center">
+    <article className="my-20 text-center">
       <h2 className="title">Fun Facts & Interests</h2>
-      <div className="flex flex-wrap justify-center max-w-3xl mx-auto gap-4 mt-6">
+      <div className="flex flex-wrap justify-center max-w-3xl mx-auto gap-4 mt-6 cursor-default">
         {[
-          "Tech Enthusiast",
           "Personal Selling",
+          "Scripted Videos",
           "Problem-Solving",
-          "Reading Tech Blogs",
           "Exploring New Frameworks",
+          "Building Portfolios",
           "Gym & Fitness",
+          "Filming",
+          "Video Editing",
+          "Freelancing",
           "ushering",
           "Presenting",
           "Public Relations",

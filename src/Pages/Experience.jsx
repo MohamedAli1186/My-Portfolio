@@ -18,17 +18,17 @@ const Experience = () => {
   };
 
   return (
-    <main className="p-container my-20">
+    <main className="p-container my-10">
       {/* Work Experience Section */}
       <WorkExperience />
 
-      <section className="py-16 text-center">
+      <section className="py-10 text-center">
         <h2 className="title">Skills & Expertise</h2>
         <div className="flex flex-wrap justify-center gap-4 mt-6 max-w-3xl mx-auto">
           {Skills.map((skill) => (
             <span
               key={skill}
-              className="bg-[#222] hover-effect px-4 py-2 rounded-md text-sm"
+              className="bg-[#222] cursor-default hover-effect px-4 py-2 rounded-md text-sm"
             >
               {skill}
             </span>
@@ -37,7 +37,7 @@ const Experience = () => {
       </section>
 
       <article className="py-16 text-center ">
-        <h2 className="title">Education & Certifications</h2>
+        <h2 className="title">Education</h2>
         <section className="mt-6 grid md:grid-cols-2 gap-8">
           {educationData.map((item, index) => (
             <div key={index} className="bg-[#222] p-6 rounded-lg">

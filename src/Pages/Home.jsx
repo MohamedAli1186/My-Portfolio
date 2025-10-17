@@ -6,7 +6,7 @@ import AboutMe from "../Components/AboutMe";
 
 const Home = () => {
   return (
-    <main className="p-container my-20">
+    <main className="p-container my-10">
       <AboutMe />
       <TechStack />
       <Certifications />
