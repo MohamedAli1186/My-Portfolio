@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { certificates } from "./data";
 import { motion, AnimatePresence } from "framer-motion";
+import { certificates } from "./data";
 
 const Certifications = () => {
   const [selectedCert, setSelectedCert] = useState(null);

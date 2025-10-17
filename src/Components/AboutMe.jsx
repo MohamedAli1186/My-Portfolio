@@ -1,4 +1,4 @@
-import { FaGithub, FaDownload, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProfileCard from "../blocks/Components/ProfileCard/ProfileCard";
 import RotatingText from "../blocks/Components/RotatingText/RotatingText";
@@ -22,9 +22,9 @@ const AboutMe = () => {
   return (
     <section className="min-h-screen flex items-center justify-center py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse justify-center w md:flex-row gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="text-left space-y-6">
+          <div className="md:text-left text-center space-y-6">
             <div className="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6">
               <span className="text-orange-400 text-sm font-medium">
                 Welcome to my portfolio
@@ -59,16 +59,16 @@ const AboutMe = () => {
               value.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
               <Link
                 to="/Mohamed-Ali-Resume.pdf"
                 download="Mohamed_Ali_CV.pdf"
                 className="bg-[#f97316] hover:bg-[#ea580c] flex  text-xl cursor-pointer
-                px-6 py-3 rounded-md font-medium transition w-fit text-nowrap"
+                px-6 py-3 items-center rounded-md font-medium transition w-fit text-nowrap"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaDownload className="mr-2" />
+                <FaDownload className="mr-2" size={24} />
                 Download CV
               </Link>
 
@@ -77,10 +77,10 @@ const AboutMe = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-black hover:bg-white text-xl  hover:text-black flex 
-            justify-center gap-1 items-center cursor-pointer text-nowrap
-            px-4 py-3 rounded-md font-medium transition w-[190px]"
+                justify-center gap-1 items-center cursor-pointer text-nowrap
+                px-4 py-3 rounded-md font-medium transition"
               >
-                <FaGithub className="mr-2" />
+                <FaGithub className="mr-2" size={24} />
                 View GitHub
               </Link>
             </div>
@@ -119,9 +119,9 @@ const AboutMe = () => {
         {/* Stats Bar */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {[
-            { value: "1+", label: "Years Experience" },
+            { value: "3+", label: "Years Experience" },
+            { value: "1+", label: "Professional Experience" },
             { value: "10+", label: "Projects Completed" },
-            { value: "25+", label: "Scripted Videos" },
             { value: "24/7", label: "Availability" },
           ].map((stat, index) => (
             <div

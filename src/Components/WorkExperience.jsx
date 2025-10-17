@@ -4,57 +4,67 @@ import { MdModelTraining } from "react-icons/md";
 const WorkExperience = () => {
   return (
     <section className="py-16">
-      <h2 className="typing-title">Work Experience</h2>
-      <div className="mt-8">
-        <div className="bg-[#222] p-10 rounded-lg max-w-200 mx-auto">
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <FaBriefcase className="text-[#f97316] text-2xl" />
-            <div>
-              <h3 className="text-xl font-semibold">
-                Front-End Developer - WaffarX
-              </h3>
-              <p className="text-gray-400 text-sm">Oct 2024 - Present</p>
+      <h2 className="typing-title text-center">Work Experience</h2>
+      <div className="mt-8 grid gap-8 md:grid-cols-2">
+        {/* WaffarX */}
+        <div className="rounded-xl border border-gray-800 bg-[#1b1b1b] p-6 hover:border-[#f97316]/50 transition-colors">
+          <div className="flex items-start gap-4">
+            <div className="shrink-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f97316]/15">
+              <FaBriefcase className="text-[#f97316] text-xl" />
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <h3 className="text-lg font-semibold">
+                  Front-End Developer • WaffarX
+                </h3>
+                <span className="text-xs text-[#f97316] bg-[#f97316]/10 px-3 py-1 rounded-full w-max">
+                  Oct 2024 – Present
+                </span>
+              </div>
+              <ul className="mt-3 text-gray-300 text-sm space-y-2">
+                <li>Developing and maintaining React/Next.js applications.</li>
+                <li>
+                  Collaborating with UX/UI to deliver seamless user experiences.
+                </li>
+                <li>Optimizing performance and implementing best practices.</li>
+                <li>
+                  Proposed and built a progress tracker to boost engagement.
+                </li>
+              </ul>
             </div>
           </div>
-          <ul className="mt-3 text-gray-300 text-sm list-disc list-inside">
-            <li>
-              Developing & maintaining web applications using React and Next.js.
-            </li>
-            <li>
-              Collaborating with UX/UI designers to create seamless user
-              experiences.
-            </li>
-            <li>
-              Optimizing website performance and implementing best practices.
-            </li>
-            <li>
-              Proposed & developed a progress tracker feature to boost user
-              engagement.
-            </li>
-          </ul>
         </div>
-        <div className="bg-[#222] p-10 rounded-lg max-w-200 my-10 mx-auto">
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <MdModelTraining size={30} className="text-[#f97316] text-2xl" />
-            <div>
-              <h3 className="text-xl font-semibold">
-                Information Technology Intern - Hassan Mohammed Allam
-              </h3>
-              <p className="text-gray-400 text-sm">July 2023 - Aug 2023</p>
+
+        {/* Hassan Mohammed Allam */}
+        <div className="rounded-xl border border-gray-800 bg-[#1b1b1b] p-6 hover:border-[#f97316]/50 transition-colors">
+          <div className="flex items-start gap-4">
+            <div className="shrink-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f97316]/15">
+              <MdModelTraining className="text-[#f97316] text-xl" />
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <h3 className="text-lg font-semibold">
+                  IT Intern • Hassan Mohammed Allam
+                </h3>
+                <span className="text-xs text-[#f97316] bg-[#f97316]/10 px-3 py-1 rounded-full w-max">
+                  Jul 2023 – Aug 2023
+                </span>
+              </div>
+              <ul className="mt-3 text-gray-300 text-sm space-y-2">
+                <li>
+                  Achieved a performance{" "}
+                  <span className="font-semibold">rating of 94%</span> by end of
+                  internship.
+                </li>
+                <li>
+                  Supported daily IT operations and assisted across projects.
+                </li>
+                <li>
+                  Provided technical support and troubleshooting to employees.
+                </li>
+              </ul>
             </div>
           </div>
-          <ul className="mt-3 text-gray-300 text-sm list-disc list-inside">
-            <li>
-              Achieved a performance{" "}
-              <span className="font-bold">rating of 94% </span>
-              at the end of the internship.
-            </li>
-            <li>
-              Worked closely with IT team members to support daily operations
-              and projects.
-            </li>
-            <li>Provided technical support and troubleshooting to employees</li>
-          </ul>
         </div>
       </div>
     </section>

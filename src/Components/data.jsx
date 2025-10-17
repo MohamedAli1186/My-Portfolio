@@ -1,3 +1,13 @@
+import { FaReact, FaAngular, FaCss3, FaHtml5 } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiTypescript,
+  SiJavascript,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+
 export const certificates = [
   {
     id: 1,
@@ -131,5 +141,106 @@ export const educationData = [
     subtitle: "Maximilian Schwarzmüller",
     duration: "12Hrs",
     description: "Udemy, 2024",
+  },
+];
+export const projects = [
+  {
+    title: "My Content Creator Portfolio",
+    demo: "https://jimmy-creator-portfolio.vercel.app/",
+    description:
+      "My Content Creator Portfolio is a modern, responsive website built with React and Tailwind CSS. It features a clean, minimalist design with smooth animations showcasing my content creation journey.",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiTypescript key="typescript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/cinematic-creator-showcase",
+    tag: "New",
+  },
+  {
+    title: "Cine Wave",
+    demo: "https://cinewavee.vercel.app/",
+    description:
+      "CineWave is a sleek, responsive movie browser built with React and Tailwind CSS, powered by the TMDB API. It allows users to explore popular movies, view detailed information, and discover new content in a clean, modern UI",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiTypescript key="typescript" />,
+      <TbApi key="api" />,
+    ],
+    github: "https://github.com/MohamedAli1186/CineWave",
+    tag: "New",
+  },
+  {
+    title: "Client Portfolio",
+    demo: "https://ahmed-salah.vercel.app/",
+    description:
+      "Ahmed Salah's portfolio is a modern, responsive website built with React and Tailwind CSS. It features a clean, minimalist design with smooth animations and Dark mode and a smooth user experience.",
+
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiJavascript key="javascript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/Salah-s-Portfolio",
+  },
+  {
+    title: "E-Commerce",
+    demo: "https://ecommerce-app-sigma-two.vercel.app/",
+    description:
+      "A website shopping app with user authentication and cart management.",
+
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiJavascript key="javascript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/ecommerce-app",
+  },
+  {
+    title: "E-Learning Management System",
+    description:
+      "An LMS website that allows students to access courses and submit assignments.",
+    tech: [
+      <FaAngular key="angular" />,
+      <SiJavascript key="javascript" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/E-LMS",
+  },
+  {
+    title: "Small Responsive Website",
+    description:
+      "A small responsive website built with HTML, CSS, and JavaScript.",
+    demo: "https://responsive-website-peach-rho.vercel.app/",
+    tech: [
+      <FaHtml5 key="html" />,
+      <SiJavascript key="javascript" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/E-LMS",
+  },
+  {
+    title: "Food Restaurant App",
+    description:
+      "A full-stack web app using Angular, MongoDB, Express.js, and Node.js.",
+    tech: [
+      <FaAngular key="angular" />,
+      <SiMongodb key="mongodb" />,
+      <FaCss3 key="css" />,
+    ],
+    github: "https://github.com/MohamedAli1186/Food-Restaurant",
+  },
+  {
+    title: "Mental Health Detection",
+    description:
+      "AI-based app to detect mental health disorders from social media posts.",
+    tech: [
+      <FaReact key="react" />,
+      <SiNextdotjs key="next.js" />,
+      <FaCss3 key="css" />,
+    ],
+    github:
+      "https://github.com/MohamedAli1186/Mental-Health-Detection-from-Social-Media-Text",
   },
 ];
