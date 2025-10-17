@@ -1,6 +1,7 @@
 // In src/Components/FeaturedProjects.jsx
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const FeaturedProjects = () => {
   const projects = [
@@ -47,7 +48,10 @@ const FeaturedProjects = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
-              <div className="relative h-64 overflow-hidden group">
+              <Link
+                to={project.demo}
+                className="relative h-64 overflow-hidden group"
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -69,27 +73,9 @@ const FeaturedProjects = () => {
                       ))}
                     </div>
                     <p className="text-gray-300">{project.description}</p>
-                    <div className="flex gap-4 pt-2">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-                      >
-                        <FaGithub /> Code
-                      </a>
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-                      >
-                        <FaExternalLinkAlt /> Live Demo
-                      </a>
-                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>
