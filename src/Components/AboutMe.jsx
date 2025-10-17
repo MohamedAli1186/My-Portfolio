@@ -105,7 +105,7 @@ const AboutMe = () => {
                 showBehindGradient={true}
                 enableMobileTilt={true}
                 onContactClick={() =>
-                  (window.location.href = "mailto:your.email@example.com")
+                  (window.location.href = "mailto:mohameedaallii10@gmail.com")
                 }
               />
             </div>
