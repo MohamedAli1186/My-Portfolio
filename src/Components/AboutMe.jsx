@@ -35,7 +35,7 @@ const AboutMe = () => {
               Hi, I'm <span className="text-orange-400 block">Mohamed Ali</span>
             </h1>
 
-            <div className="h-16 md:h-20 flex items-center">
+            <div className="h-16 md:h-20 flex items-center w-full md:justify-start justify-center">
               <RotatingText
                 texts={roles}
                 auto={true}
