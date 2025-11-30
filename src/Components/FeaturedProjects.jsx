@@ -1,16 +1,25 @@
 // In src/Components/FeaturedProjects.jsx
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const FeaturedProjects = () => {
   const projects = [
+    // {
+    //   id: 1,
+    //   title: "My Content Creator Portfolio",
+    //   description:
+    //     "A modern, responsive website built with React and Tailwind CSS featuring smooth animations and a clean design.",
+    //   image: "/content.png",
+    //   tags: ["React", "Tailwind CSS", "TypeScript"],
+    //   github: "https://github.com/MohamedAli1186/cinematic-creator-showcase",
+    //   demo: "https://jimmy-creator-portfolio.vercel.app/",
+    // },
     {
-      id: 1,
-      title: "My Content Creator Portfolio",
+      id: 3,
+      title: "Chen Style Tai Chi Instructor",
       description:
-        "A modern, responsive website built with React and Tailwind CSS featuring smooth animations and a clean design.",
-      image: "/content.png",
+        "10+ years of experience guiding more than 400 students toward balance, strength, and inner peace through the ancient art of Chen Style Tai Chi.",
+      image: "/taichai.png",
       tags: ["React", "Tailwind CSS", "TypeScript"],
       github: "https://github.com/MohamedAli1186/cinematic-creator-showcase",
       demo: "https://jimmy-creator-portfolio.vercel.app/",

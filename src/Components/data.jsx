@@ -145,6 +145,19 @@ export const educationData = [
 ];
 export const projects = [
   {
+    title: "Chen Style Tai Chi Instructor",
+    demo: "https://mohamed-khaled-tai-chi-git-main-mohamed-ali-projects.vercel.app/",
+    description:
+      "10+ years of experience guiding more than 400 students toward balance, strength, and inner peace through the ancient art of Chen Style Tai Chi.",
+    tech: [
+      <FaReact key="react" />,
+      <SiTailwindcss key="tailwindcss" />,
+      <SiTypescript key="typescript" />,
+    ],
+    github: "https://github.com/MohamedAli1186/chen-flow-zen",
+    tag: "New",
+  },
+  {
     title: "My Content Creator Portfolio",
     demo: "https://jimmy-creator-portfolio.vercel.app/",
     description:
