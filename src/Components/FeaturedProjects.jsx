@@ -21,8 +21,8 @@ const FeaturedProjects = () => {
         "10+ years of experience guiding more than 400 students toward balance, strength, and inner peace through the ancient art of Chen Style Tai Chi.",
       image: "/taichai.png",
       tags: ["React", "Tailwind CSS", "TypeScript"],
-      github: "https://github.com/MohamedAli1186/cinematic-creator-showcase",
-      demo: "https://jimmy-creator-portfolio.vercel.app/",
+      github: "https://github.com/MohamedAli1186/chen-flow-zen",
+      demo: "https://mohamed-khaled-tai-chi-git-main-mohamed-ali-projects.vercel.app/",
     },
     {
       id: 2,
