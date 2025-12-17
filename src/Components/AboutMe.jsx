@@ -32,7 +32,8 @@ const AboutMe = () => {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-              Hi, I'm <span className="text-orange-400 block">Mohamed Ali</span>
+              Hi, I&apos;m
+              <span className="text-orange-400 block">Mohamed Ali</span>
             </h1>
 
             <div className="h-16 md:h-20 flex items-center w-full md:justify-start justify-center">
@@ -88,24 +89,21 @@ const AboutMe = () => {
 
           {/* Right Column - Profile Card */}
           <div className="relative">
-            <div className="relative z-10 hover:scale-105 transition-transform duration-500">
+            <div className="relative z-10 ">
               <ProfileCard
                 name="Mohamed Ali"
                 title="Software Engineer"
-                handle="MohamedAli1186"
-                status="Available for work"
-                contactText="Hire Me"
-                avatarUrl="/my-photooo.webp"
+                handle="mohameedaallii"
+                avatarUrl="/ana.png"
                 miniAvatarUrl="/anaOrange.jpg"
                 behindGradient={DEFAULT_BEHIND_GRADIENT}
                 innerGradient={DEFAULT_INNER_GRADIENT}
                 showUserInfo={true}
                 enableTilt={true}
-                className="w-full max-w-md mx-auto"
                 showBehindGradient={true}
                 enableMobileTilt={true}
                 onContactClick={() =>
-                  (window.location.href = "mailto:mohameedaallii10@gmail.com")
+                  (window.location.href = "https://wa.me/201011533423")
                 }
               />
             </div>

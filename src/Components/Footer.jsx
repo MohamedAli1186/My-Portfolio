@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#121212] py-12 px-6 md:px-16">
-      <div className="max-w-6xl flex flex-wrap justify-start sm:justify-evenly gap-8">
+      <div className=" flex flex-wrap justify-start sm:justify-between gap-8 xl:ps-30">
         {/* About Section */}
-        <div>
+        <div className="flex-1">
           <h3 className="text-2xl font-semibold mb-4 ">Mohamed Ali</h3>
           <p className="text-gray-400 text-sm max-w-90">
             Front-End Developer specializing in React, Next.js, and modern web
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div>
+        <div className="flex-1">
           <h3 className="text-xl font-semibold mb-4">Contact</h3>
           <p className="flex items-center gap-3 text-gray-300 hover:text-[#f97316] transition cursor-pointer">
             <FaEnvelope size={18} className="text-[#f97316]" />
@@ -41,7 +41,8 @@ const Footer = () => {
             <p className="text-xs text-[#f97316]">Click to copy</p>
           </p>
         </div>
-        <div>
+
+        <div className="flex-1 flex flex-col items-start">
           <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
           <SocialLinks />
         </div>
