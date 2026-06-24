@@ -94,14 +94,16 @@ const AboutMe = () => {
                 name="Mohamed Ali"
                 title="Software Engineer"
                 handle="mohameedaallii"
-                avatarUrl="/ana.png"
-                miniAvatarUrl="/anaOrange.jpg"
+                avatarUrl="/anaaa.jpeg"
+                miniAvatarUrl="/ana3.jpg"
                 behindGradient={DEFAULT_BEHIND_GRADIENT}
                 innerGradient={DEFAULT_INNER_GRADIENT}
                 showUserInfo={true}
+                iconUrl="/ana.png"
                 enableTilt={true}
                 showBehindGradient={true}
                 enableMobileTilt={true}
+                status="Available"
                 onContactClick={() =>
                   (window.location.href = "https://wa.me/201011533423")
                 }

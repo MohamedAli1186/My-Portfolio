@@ -59,6 +59,7 @@ const FeaturedProjects = () => {
             >
               <Link
                 to={project.demo}
+                target="_blank"
                 className="relative h-64 overflow-hidden group"
               >
                 <img
